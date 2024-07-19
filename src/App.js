@@ -120,14 +120,14 @@ function App() {
             </a>
           </p>
         </div>
-        <div className="img-container">
-          <img
-            src="/imageUsed/img1.jpg"
-            alt="Welcome"
-            className="welcome-image"
-          />
-        </div>
       </form>
+      <div className="img-container">
+        <img
+          src="/imageUsed/img1.jpg"
+          alt="Welcome"
+          className="welcome-image"
+        />
+      </div>
     </div>
   );
 }
