@@ -60,6 +60,7 @@ body {
     }
   }
   .Icon-container {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,6 +150,7 @@ body {
         color: var(--text-color);
       }
       span {
+        cursor: pointer;
         position: absolute;
         top: 45%;
         transform: translateX(-50%);
@@ -163,6 +165,7 @@ body {
   }
   .signUp {
     width: 100%;
+    user-select: none;
     .signInBtn {
       background: var(--button-color);
       color: var(--text-second);
