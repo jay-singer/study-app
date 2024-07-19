@@ -2,6 +2,15 @@ import "./App.css";
 
 import React from "react";
 function App() {
+  const [type, setType] = React.useState("password");
+
+  const handleHideShow = () => {
+    if (type === "password") {
+      setType("text");
+    } else {
+      setType("password");
+    }
+  };
   return (
     <div className="container">
       <form for="" className="FormField">
@@ -84,7 +93,7 @@ function App() {
             <div className="PassdField">
               <label for="password">Password</label>
               <input
-                type="password"
+                type={type}
                 placeholder="Enter your password"
                 id="password"
                 required
@@ -92,6 +101,7 @@ function App() {
               <span className="visible">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  onClick={handleHideShow}
                   width="1em"
                   height="1em"
                   viewBox="0 0 1024 1024"
